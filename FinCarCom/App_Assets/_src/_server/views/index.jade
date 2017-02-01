@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Finance | CAR.com
+    link(rel="stylesheet", href="/public/css/global.min.css?v=20160223")
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel="canonical", href="https://finance.car.com/")
+  body
+    noscript
+      div(class="container script-disabled")
+        p It appears that you have javascript disabled in your browser.
+        p We would love to help you with your financing.
+        p To do this, you'll need to enable javascript and then refresh your browser.
+    div(id="app_mount", class="site")
+    script(src="#{env.islocaldev ? '/public/js/bundle.js' : '/public/js/bundle.min.js'}", async, defer)
+    include ../../../_build/public/img/sprite.svg

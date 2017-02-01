@@ -1,0 +1,42 @@
+﻿@model FinCarCom.Models.App.Index
+@{Layout = "";}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance | CAR.com</title>
+  @Styles.Render("~/css/bundle")
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="canonical" href="https://finance.car.com/"/>
+  <script>window.CAR={}</script>
+</head>
+<body>
+  <noscript>
+    <div class="container script-disabled">
+      <p>It appears that you have javascript disabled in your browser.</p>
+      <p>We would love to help you with your financing.</p>
+      <p>To do this, you'll need to enable javascript and then refresh your browser.</p>
+    </div>
+  </noscript>
+  <div id="app_mount" class="site"></div>
+  <script>
+    (function(win) {
+      win.CAR.NoQualify = {
+        redirectUrl: '@Model.RedirectUrl',
+        redirectTtlms: '@Model.RedirectTtlms',
+        copyTextDuplicate: '@Model.NoPlacementCopyTextDuplicate'
+      };
+      win.CAR.pageMeta = @Html.Raw(Model.PageMeta);
+      win.CAR.purchModePageSeq = @Html.Raw(Model.PurchaseModePageSequence);
+      win.CAR.refiModePageSeq = @Html.Raw(Model.RefinanceModePageSequence);
+      win.CAR.noqualModePageSeq = @Html.Raw(Model.NoQualifyModePageSequence);
+      win.CAR.refiSrcIds =  @Html.Raw(Model.RefinanceSourceIds);
+      win.CAR.makes =  @Html.Raw(Model.Makes);
+    })(window)
+  </script>
+  @Scripts.Render("~/js/bundle")
+  @Html.Partial("_SvgSprite")
+</body>
+</html>

@@ -1,0 +1,9 @@
+node_modules
+_build
+
+# Logs
+logs
+*.log
+
+# Mac files
+.DS_Store

@@ -1,0 +1,82 @@
+finance-car-com/
+  - _build/
+    - css/
+      # bundle-ah48c.min.css
+    - js/
+      # bundle-f7sc9.min.js
+    - img/
+      # bg-pic-3p12f.png
+      # logo.svg
+    # favicon.ico
+
+  - _docs
+    # component-struct.md
+
+  - src/
+    - _client/
+      - actions
+        # index.js
+      - api
+        # index.js
+      - components
+        - common
+        - prequalify
+          # Prequalify.js
+          # prequalify.style
+        - contactInfo
+        # index.js
+      - constants
+        # index.js
+      - containers
+      - reducers
+        # index.js
+      - store
+        # store.js
+      - utils
+
+      - app/
+        # App.js
+        # App-spec.js
+        # Button.js
+        # Button-spec.js
+        # Footer.js
+        # Footer-spec.js
+        # Header.js
+        # Header-spec.js
+        # Link.js
+        # Link-spec.js
+        # ProgressBar.js
+        # ProgressBar-spec.js
+        # reducers.js
+        # reducers-spec.js
+        # routes.js
+        # routes-spec.js
+      - prequalify/
+        # CreditRating.js
+        # CreditRating-spec.js
+        # MonthlyIncome.js
+        # MonthlyIncome-spec.js
+        # Prequalify.js
+        # Prequalify-spec.js
+        # Zipcode.js
+        # Zipcode-spec.js
+      # client.js (entrypoint)
+
+    - _server/
+      - config/
+        # env.config.json
+        # sql.config.json
+        # redis.config.json
+      - controllers/
+        # leadController.js
+      - models/
+        # affiliate.js
+        # lead.js
+      - routers/
+        # apiRouter.js
+      - services/
+        # affiliateService.js
+        # leadService.js
+      - views/
+        # index.jade
+      # server.js (entrypoint)

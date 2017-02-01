@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinCarCom", "FinCarCom\FinCarCom.csproj", "{AC20D9E0-2028-4E87-84C1-58932330AA37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinCarCom.Tests", "FinCarCom.Tests\FinCarCom.Tests.csproj", "{1CA7543E-92B8-4BEC-B71C-0E031B8207DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{80D06FD4-AC7B-4AA7-8FD7-FC3C8C1DC7BE}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.autobytel.com:8080/tfs/financeleads
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FinCarCom.Tests\\FinCarCom.Tests.csproj
+		SccProjectName1 = FinCarCom.Tests
+		SccLocalPath1 = FinCarCom.Tests
+		SccProjectUniqueName2 = FinCarCom\\FinCarCom.csproj
+		SccProjectName2 = FinCarCom
+		SccLocalPath2 = FinCarCom
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC20D9E0-2028-4E87-84C1-58932330AA37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC20D9E0-2028-4E87-84C1-58932330AA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC20D9E0-2028-4E87-84C1-58932330AA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC20D9E0-2028-4E87-84C1-58932330AA37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA7543E-92B8-4BEC-B71C-0E031B8207DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA7543E-92B8-4BEC-B71C-0E031B8207DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA7543E-92B8-4BEC-B71C-0E031B8207DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA7543E-92B8-4BEC-B71C-0E031B8207DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

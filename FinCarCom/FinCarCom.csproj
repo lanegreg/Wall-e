@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC20D9E0-2028-4E87-84C1-58932330AA37}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinCarCom</RootNamespace>
+    <AssemblyName>FinCarCom</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper.Mapper, Version=1.50.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.Mapper.1.50.1\lib\net451\Dapper.Mapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.3.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC3.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\CacheableComponents.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Common\Cacheability\CacheConfig.cs" />
+    <Compile Include="Common\Cacheability\ILocalCache.cs" />
+    <Compile Include="Common\Cacheability\LocalCache.cs" />
+    <Compile Include="Common\Cacheability\TimeToLive.cs" />
+    <Compile Include="Common\Cacheability\TimeToLiveLevel.cs" />
+    <Compile Include="Common\Extensions\BoolExtensions.cs" />
+    <Compile Include="Common\Extensions\HttpRequestExtensions.cs" />
+    <Compile Include="Common\Mappers\AppControllerProfile.cs" />
+    <Compile Include="Common\Mappers\LeadControllerProfile.cs" />
+    <Compile Include="Common\Mergeability\Merger.cs" />
+    <Compile Include="Common\Mergeability\TypeMergerPolicy.cs" />
+    <Compile Include="Common\Extensions\StringExtensions.cs" />
+    <Compile Include="Common\WebConfig.cs" />
+    <Compile Include="Common\XmlConvert.cs" />
+    <Compile Include="Controllers\Api\AppController.cs" />
+    <Compile Include="Controllers\Api\LeadController.cs" />
+    <Compile Include="Controllers\AppController.cs" />
+    <Compile Include="Controllers\Filters\ApiCacheabilityAttribute.cs" />
+    <Compile Include="Controllers\Filters\CacheabilityAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\App\Index.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Common\ICacheable.cs" />
+    <Compile Include="Services\Common\IDbConnectionFactory.cs" />
+    <Compile Include="Services\Common\SqlConnectionFactory.cs" />
+    <Compile Include="Services\Data\Impl\GeoService.cs" />
+    <Compile Include="Services\Data\Impl\AffiliateProxyService.cs" />
+    <Compile Include="Services\Data\Impl\VehicleSpecService.cs" />
+    <Compile Include="Services\Data\Impl\SemProxyService.cs" />
+    <Compile Include="Services\Data\Impl\LeadDataService.cs" />
+    <Compile Include="Services\Domain\Models\Affiliate\IPingRequest.cs" />
+    <Compile Include="Services\Domain\Models\Affiliate\IPingResponse.cs" />
+    <Compile Include="Services\Domain\Models\Affiliate\IPostRequest.cs" />
+    <Compile Include="Services\Domain\Models\Affiliate\IPostResponse.cs" />
+    <Compile Include="Services\Domain\Models\Affiliate\PingRequest.cs" />
+    <Compile Include="Services\Domain\Models\Affiliate\PingResponse.cs" />
+    <Compile Include="Services\Domain\Models\Affiliate\PostRequest.cs" />
+    <Compile Include="Services\Domain\Models\Affiliate\PostResponse.cs" />
+    <Compile Include="Services\Domain\Models\Common\ResidenceTypeTranslator.cs" />
+    <Compile Include="Services\Domain\Models\Common\CreditRatingTranslator.cs" />
+    <Compile Include="Services\Domain\Models\Common\Entity.cs" />
+    <Compile Include="Services\Domain\Models\Common\IgnoreAttribute.cs" />
+    <Compile Include="Services\Domain\Models\Common\IQuerystringable.cs" />
+    <Compile Include="Services\Domain\Models\Common\QuerystringBase.cs" />
+    <Compile Include="Services\Domain\Models\Common\QuerystringPropertyAttribute.cs" />
+    <Compile Include="Services\Domain\Models\Geo\CityStateZip.cs" />
+    <Compile Include="Services\Domain\Models\Geo\ICityStateZip.cs" />
+    <Compile Include="Services\Domain\Models\Stage\ILead.cs" />
+    <Compile Include="Services\Domain\Models\Sem\IPostRequest.cs" />
+    <Compile Include="Services\Domain\Models\Sem\IPingRequest.cs" />
+    <Compile Include="Services\Domain\Models\Sem\IPostResponse.cs" />
+    <Compile Include="Services\Domain\Models\Sem\IPingResponse.cs" />
+    <Compile Include="Services\Domain\Models\Stage\ILeadState.cs" />
+    <Compile Include="Services\Domain\Models\Stage\Lead.cs" />
+    <Compile Include="Services\Domain\Models\Sem\PostRequest.cs" />
+    <Compile Include="Services\Domain\Models\Sem\PingRequest.cs" />
+    <Compile Include="Services\Domain\Models\Sem\PostResponse.cs" />
+    <Compile Include="Services\Domain\Models\Sem\PingResponse.cs" />
+    <Compile Include="Services\Domain\Models\Stage\Source.cs" />
+    <Compile Include="Services\Domain\Models\VehicleSpec\IMake.cs" />
+    <Compile Include="Services\Domain\Models\VehicleSpec\IModel.cs" />
+    <Compile Include="Services\Domain\Models\VehicleSpec\Make.cs" />
+    <Compile Include="Services\Domain\Models\VehicleSpec\Model.cs" />
+    <Compile Include="Services\Domain\Services\IGeoService.cs" />
+    <Compile Include="Services\Domain\Services\IAffiliateProxyService.cs" />
+    <Compile Include="Services\Domain\Services\IVehicleSpecService.cs" />
+    <Compile Include="Services\Domain\Services\ISemProxyService.cs" />
+    <Compile Include="Services\Domain\Services\ILeadDataService.cs" />
+    <Compile Include="Services\ServiceLocator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Assets\gulpfile.js" />
+    <Content Include="App_Assets\webpack.config.js" />
+    <Content Include="App_Assets\_assets\bg1-1280px.jpg" />
+    <Content Include="App_Assets\_assets\bg1-1920px.jpg" />
+    <Content Include="App_Assets\_assets\bg1-portrait.jpg" />
+    <Content Include="App_Assets\_assets\credit-karma.png" />
+    <Content Include="App_Assets\_assets\digicert-logo.png" />
+    <Content Include="App_Assets\_assets\favicon.ico" />
+    <Content Include="App_Assets\_assets\full-original.css" />
+    <Content Include="App_Assets\_assets\global.css" />
+    <Content Include="App_Assets\_assets\lex-logo.png" />
+    <Content Include="App_Assets\_assets\sprite.svg" />
+    <Content Include="App_Assets\_src\_client\actions\apiActions.js" />
+    <Content Include="App_Assets\_src\_client\actions\appActions.js" />
+    <Content Include="App_Assets\_src\_client\actions\index.js" />
+    <Content Include="App_Assets\_src\_client\actions\leadActions.js" />
+    <Content Include="App_Assets\_src\_client\actions\sagas.js" />
+    <Content Include="App_Assets\_src\_client\api\service.js" />
+    <Content Include="App_Assets\_src\_client\client.js" />
+    <Content Include="App_Assets\_src\_client\components\containers\App.js" />
+    <Content Include="App_Assets\_src\_client\components\containers\index.js" />
+    <Content Include="App_Assets\_src\_client\components\index.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\AnnualIncome.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\Congratulations.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\ContactEmail.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\ContactName.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\CreditRating.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\DateOfBirth.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\Employment.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\EmploymentTime.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\Footer.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\Header.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\index.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\MainContentWrap.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\NoQualify.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\Phones.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\Prequalify.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\ProgressBar.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\ResidenceAddress.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\ResidenceCost.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\ResidenceTime.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\ResidenceType.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\SocialSecurity.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\VehicleMakeModel.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\VehicleYearMileage.js" />
+    <Content Include="App_Assets\_src\_client\components\presentationals\WorkPhone.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\annualincome.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\app.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\carmakemodel.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\congratulations.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\contactemail.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\contactname.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\creditrating.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\dateofbirth.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\footer.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\global.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\header.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\homeaddress.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\maincontentwrap.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\phone.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\prequalify.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\residencecost.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\residencetime.js" />
+    <Content Include="App_Assets\_src\_client\components\styles\socialsecurity.js" />
+    <Content Include="App_Assets\_src\_client\core\global.js" />
+    <Content Include="App_Assets\_src\_client\core\routes.js" />
+    <Content Include="App_Assets\_src\_client\core\store.js" />
+    <Content Include="App_Assets\_src\_client\reducers\apiReducer.js" />
+    <Content Include="App_Assets\_src\_client\reducers\appReducer.js" />
+    <Content Include="App_Assets\_src\_client\reducers\index.js" />
+    <Content Include="App_Assets\_src\_client\reducers\leadReducer.js" />
+    <Content Include="App_Assets\_src\_server\config\env.js" />
+    <Content Include="App_Assets\_src\_server\config\redis.js" />
+    <Content Include="App_Assets\_src\_server\config\sql.js" />
+    <Content Include="App_Assets\_src\_server\controllers\affiliateController.js" />
+    <Content Include="App_Assets\_src\_server\routers\apiRouter.js" />
+    <Content Include="App_Assets\_src\_server\server.js" />
+    <Content Include="App_Assets\_src\_server\services\redisService.js" />
+    <Content Include="App_Assets\_src\_server\services\sqlService.js" />
+    <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="Content\assets\bg1-1280px.jpg" />
+    <Content Include="Content\assets\bg1-1920px.jpg" />
+    <Content Include="Content\assets\bg1-portrait.jpg" />
+    <Content Include="Content\assets\credit-karma.png" />
+    <Content Include="Content\assets\digicert-logo.png" />
+    <Content Include="Content\assets\lex-logo.png" />
+    <Content Include="Content\assets\logo-large.png" />
+    <Content Include="Content\assets\logo-small.png" />
+    <Content Include="Content\assets\sprite.svg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="App_Assets\.babelrc" />
+    <Content Include="App_Assets\.eslintignore" />
+    <Content Include="App_Assets\.eslintrc" />
+    <Content Include="App_Assets\.gitignore" />
+    <Content Include="App_Assets\.nvmrc" />
+    <Content Include="App_Assets\package.json" />
+    <Content Include="App_Assets\README.md" />
+    <Content Include="App_Assets\_docs\component-struct.md" />
+    <Content Include="App_Assets\_docs\folder-struct.md" />
+    <Content Include="App_Assets\_src\_server\meta\appInitData.json" />
+    <Content Include="App_Assets\_src\_server\views\404-status.jade" />
+    <Content Include="App_Assets\_src\_server\views\index.jade" />
+    <Content Include="allpagemeta.json" />
+    <Content Include="humans.txt" />
+    <Content Include="ping.html" />
+    <Content Include="purchasepagesequence.json" />
+    <Content Include="refinancepagesequence.json" />
+    <Content Include="noqualifypagesequence.json" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="img\bg1-1280px.jpg" />
+    <Content Include="img\bg1-1920px.jpg" />
+    <Content Include="img\bg1-portrait.jpg" />
+    <Content Include="img\credit-karma.png" />
+    <Content Include="img\digicert-logo.png" />
+    <Content Include="img\lex-logo.png" />
+    <Content Include="servervars.aspx" />
+    <Content Include="Scripts\jquery-2.2.2.min.js" />
+    <Content Include="Scripts\jquery.caret.js" />
+    <Content Include="Scripts\jquery.caret.min.js" />
+    <Content Include="Scripts\jquery.mask.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\site.js" />
+    <Content Include="Scripts\store.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="services.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Services\Data\App_Sql\Lead\FCCWeb.GetCityStatesByZip.sql" />
+    <Content Include="Services\Data\App_Sql\Lead\FCCWeb.GetStagedLeadById.sql" />
+    <Content Include="Services\Data\App_Sql\Lead\FCCWeb.GetRefiSources.sql" />
+    <Content Include="Services\Data\App_Sql\Pvc\FCCWeb.GetPvcCacheData.sql" />
+    <Content Include="Views\App\Index.cshtml" />
+    <Content Include="Views\OverlayContent\UsageTerms.html" />
+    <Content Include="Views\OverlayContent\CorpInfo.html" />
+    <Content Include="Views\OverlayContent\IntellProp.html" />
+    <Content Include="Views\OverlayContent\FraudAlert.html" />
+    <Content Include="Views\OverlayContent\PrivacyPolicy.html" />
+    <None Include="Views\Shared\_SvgSprite.cshtml" />
+    <Content Include="Services\Data\App_Sql\create_table_FCCWebStagedLeadApplicant.sql" />
+    <Content Include="Services\Data\App_Sql\create_schema_FCCWeb.sql" />
+    <Content Include="Services\Data\App_Sql\Lead\FCCWeb.VerifyZipcode.sql" />
+    <Content Include="Services\Data\App_Sql\Lead\FCCWeb.UpsertStagedLead.sql" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Services\Data\App_Sql\Affiliate\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50136</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50136/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

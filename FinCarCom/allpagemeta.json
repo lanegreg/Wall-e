@@ -1,0 +1,135 @@
+﻿[
+  {
+    "url": "/prequalify/",
+    "h1": "Auto Financing Made Easy",
+    "h2": null,
+    "h3": "Free, No Obligation New & Used Car Finance Quote",
+    "h4": null
+  },
+  {
+    "url": "/annual-income/",
+    "h1": null,
+    "h2": "What is your annual income?",
+    "h3": null,
+    "h4": "Include any bonuses, alimony, child support etc."
+  },
+  {
+    "url": "/vehicle-year-mileage/",
+    "h1": null,
+    "h2": "What is your vehicle's year and mileage?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/vehicle-make-model/",
+    "h1": null,
+    "h2": "What is the make and model of your vehicle?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/social-security/",
+    "h1": null,
+    "h2": "What's your Social Security Number?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/credit-rating/",
+    "h1": null,
+    "h2": "What is your credit rating?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/contact-name/",
+    "h1": null,
+    "h2": "What is your first and last name?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/contact-email/",
+    "h1": null,
+    "h2": "What is the best email for contacting you?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/contact-phone/",
+    "h1": null,
+    "h2": "What are your contact phone numbers?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/residence-address/",
+    "h1": null,
+    "h2": "What is your home address?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/residence-type/",
+    "h1": null,
+    "h2": "What is your living arrangement?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/residence-time/",
+    "h1": null,
+    "h2": "How long have you lived at your current address?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/residence-cost/",
+    "h1": null,
+    "h2": "What is your monthly housing cost?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/employer/",
+    "h1": null,
+    "h2": "Where do you work?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/employment-time/",
+    "h1": null,
+    "h2": "How long have you been with your current employer?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/employment-phone/",
+    "h1": null,
+    "h2": "What is your work phone number?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/date-of-birth/",
+    "h1": null,
+    "h2": "What's your Date of Birth?",
+    "h3": null,
+    "h4": null
+  },
+  {
+    "url": "/congratulations/",
+    "h1": null,
+    "h2": "Congratulations, You're Done!",
+    "h3": "Now that we have what we need, a representative will be contacting you shortly.",
+    "h4": null
+  },
+  {
+    "url": "/no-qualify/",
+    "h1": null,
+    "h2": "Based on the information provided, we currently do not have a partner program in your area. We will automatically redirect you to an affiliate site that may be able to assist you.",
+    "h3": null,
+    "h4": null
+  }
+]

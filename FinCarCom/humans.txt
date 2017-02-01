@@ -1,0 +1,41 @@
+
+           ______
+          /  __  \
+         /  /  \__\  ___ _ _ __  ___   ___  _   _
+        (  (    ___ / _ V | V / /  _\ / _ \| \ / |
+         \  \__/  /| (_)  |  / |  (_ | (_) | |`| |
+          \______/  \__/|_|__|(_)___/ \___/|_| |_|
+         ..._________________...____________________...........
+ .......///_________________///____________________///
+
+
+/* TEAM */
+
+  Name: Greg Lane
+  Role: Staff Soft Eng, Full Stack Developer, Architect, Perf
+  Location: Irvine, CA USA
+
+
+
+/* SITE */
+  Last update: 2016/11/03
+  Url: http://www.finance.car.com
+  Language: English
+  Doctype: HTML5
+  Standards: HTML5, CSS3, es6, ReST
+  Frameworks: .NET4.5/MVC5, WebAPI2, React
+  Software: react-router, redux, connect, radium, react-saga, react-thunk
+  Tools: Visual Studio 2015, Atom, Sass, Babel, Webpack, Gulp, Jenkins
+
+
+/* THANKS */
+  To everyone else that supports this team!
+                                                                                          __
+    ______                   __                                                          |  |
+   /  __  \                 /  \             _          _               _           __   |  |
+  /  /  \__\  _____        / /\ \  _    _ __| |__  ___ | |_  _     _ __| |__  ___  |  |  |  |
+ (  (  _____ /  _  \      / /__\ \| |  | |__   __|/ _ \|    \  \ /  |__   __|/  _ \|  |  |__|
+  \  \__/  /|  (_)  |    /  ____  \ \__/ /  | |  | (_) | (_) |  v  /   | |  |   __/|  |   __
+   \______/  \_____/    /_/      \_\____/   |_|   \___/|____/ \   /    |_|   \____/|__|  (  )
+                                                              /  /
+                                                             /__/

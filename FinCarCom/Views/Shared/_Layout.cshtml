@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance.CAR.com</title>
+</head>
+<body>
+  <div class="site">
+    <noscript>
+      <div class="container script-disabled">
+        <p>It appears that you have javascript disabled in your browser.</p>
+        <p>We would love to help you with your financing.</p>
+        <p>To do this, you'll need to enable javascript and then refresh your browser.</p>
+      </div>
+    </noscript>
+  </div>
+  @{Html.RenderPartial("_SvgSprite");}
+
+  @RenderSection("scripts", required: false)
+</body>
+</html>
